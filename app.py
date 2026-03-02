@@ -436,9 +436,8 @@ if page == "📁 Dataset":
 
     train_data = pd.read_csv("train.csv")
 
-    # -----------------------------
-    # 📊 KPI CARDS
-    # -----------------------------
+    # KPI CARDS
+    
     total_records = len(train_data)
     total_features = train_data.shape[1]
     claim_rate = train_data['is_claim'].mean() * 100
@@ -459,17 +458,16 @@ if page == "📁 Dataset":
 
     st.markdown("---")
 
-    # -----------------------------
-    # 📊 Dataset Preview Section
-    # -----------------------------
+    #  Dataset Preview Section
+    
     st.subheader("📊 Dataset Preview")
     st.dataframe(train_data.head(50), use_container_width=True)
 
     st.markdown("---")
 
-    # -----------------------------
-    # 📖 Styled Explanation Section
-    # -----------------------------
+
+        # Styled Explanation Section
+    
     with st.expander("📖 Dataset Explanation (Click to Expand)"):
 
         st.markdown("""
