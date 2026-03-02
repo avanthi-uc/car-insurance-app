@@ -427,7 +427,7 @@ elif page == "📁 Predict from CSV":
         st.subheader("Prediction Output")
         st.dataframe(output)
 
-        csv = output.to_csv(index=False).encode("utf-8")
+        #csv = output.to_csv(index=False).encode("utf-8")
         
 
 if page == "📁 Dataset":
