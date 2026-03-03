@@ -149,7 +149,6 @@ Avanthi
 
 ## ⭐ Future Improvements
 
-- SHAP Explainability
 - Model Monitoring
 - Login Authentication
 - API Version of Model
